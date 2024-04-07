@@ -1,0 +1,14 @@
+.movies-list_button>button{
+    color: red;
+    border: 1px solid gray;
+    border-radius: 25px;
+}
+.movies-list_button>button:hover{
+    background-color: green;
+    color: white;
+}
+.movies-list_banner>img{
+    height: 420px;
+    width: 280px;
+    border-radius: 10px;
+}

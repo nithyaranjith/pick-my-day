@@ -1,1 +1,70 @@
-<p>movies-list works!</p>
+<div class="container-fluid p-3">
+    <h3 class="pt-2 mb-3">Movies in Chennai</h3>
+    <div class="movies-list_button mb-3">
+        <button class="btn me-3">Tamil</button>
+        <button class="btn me-3">Hindi</button>
+        <button class="btn me-3">English</button>
+        <button class="btn me-3">Malayalam</button>
+        <button class="btn me-3">Telugu</button>
+        <button class="btn me-3">Kannada</button>
+        <button class="btn me-3">Bengali</button>
+        <button class="btn me-3">Bhojpuri</button>
+        <button class="btn me-3">Gujarati</button>
+    </div>
+    <div class="d-flex justify-content-between">
+        <a routerLink="/movie-model">
+            <div class="movies-list_banner">
+                <img src="/assets/images/movies-list-1.avif" alt="movie-list-1" class="img-fluid mb-3">
+                <h4 class="info_label mb-2">Crew</h4>
+                <h6 class="info_para">Hindi, Tamil</h6>
+            </div>
+        </a>
+        <a routerLink="/movie-model">
+            <div class="movies-list_banner">
+                <img src="/assets/images/movies-list-2.avif" alt="movie-list-2" class="img-fluid mb-3">
+                <h4 class="info_label mb-2">Godzilla x King</h4>
+                <h6 class="info_para">English, Hindi, Tamil, Telugu</h6>
+            </div>
+        </a>
+        <a routerLink="/movie-model">
+            <div class="movies-list_banner">
+                <img src="/assets/images/movies-list-3.avif" alt="movie-list-3" class="img-fluid mb-3">
+                <h4 class="info_label mb-2">Aadujeevitham</h4>
+                <h6 class="info_para">Malayalam, Tamil, Telugu</h6>
+            </div>
+        </a>
+        <a routerLink="/movie-model">
+            <div class="movies-list_banner">
+                <img src="/assets/images/movies-list-4.avif" alt="movie-list-4" class="img-fluid mb-3">
+                <h4 class="info_label mb-2">Manjummel Boys</h4>
+                <h6 class="info_para">Malayalam</h6>
+            </div>
+        </a>
+    </div>
+
+    <!-- Add this modal HTML at the end of your component template -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Modal Header</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!-- Add your modal content here -->
+          This is a Bootstrap modal dialog. You can place any content here.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Your existing HTML code -->
+  <div class="container-fluid p-3">
+    <!-- Your existing content here -->
+  </div>
+  
+
+</div>

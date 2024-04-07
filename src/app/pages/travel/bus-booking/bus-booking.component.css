@@ -1,0 +1,34 @@
+.bus{
+    /* /Users/apple/Desktop/pick my day/pick-my-day/src */
+    background-image: url('/assets/images/decoration.jpeg');
+    /* width: 100%;
+    height: 100%; */
+}
+span{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.hoverClr:hover{
+    background-color: rgb(2, 174, 2);
+    color: white;
+    cursor: pointer;
+}
+.hoverClr{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.movie-pay{
+    background-color: #f84464;
+    color: white;
+    width: 350px;
+}
+.selected {
+    background-color: green;
+    color:white
+  }

@@ -1,0 +1,352 @@
+<div class="container-fluid bus p-5">
+
+    <h4 class="text-danger ms-2 ps-2 rounded-3" style="width: 200px;background-color: rgb(230, 241, 251);">Book Bus
+        tickets</h4>
+    <div class="row  bg-white mt-5 mb-5 p-4 rounded-2 ms-3 me-3">
+        <div class="col-3 d-flex">
+            <!-- <img src="/assets/images/bus-icon.png" alt="img" width="30" height="30" class="mt-2 bg-danger"> -->
+            <p class="text-secondary mt-2 ">From</p>
+            <select class="form-select p-2 border-2 rounded-2 w-100 ms-2">
+                <option value="/movies-list">Chennai</option>
+                <option value="/movies-list">Coimbatore</option>
+                <option value="/movies-list">Madurai</option>
+                <option value="/movies-list">Tiruvannamalai</option>
+                <option value="/movies-list">Vellore</option>
+                <option value="/movies-list">Salem</option>
+                <option value="/movies-list">Tiruppur</option>
+                <option value="/movies-list">Erode</option>
+            </select>
+        </div>
+        <div class="col-3 d-flex">
+            <!-- <span class="material-symbols-outlined  fs-2 text-danger bg-white">
+                location_on
+                </span> -->
+            <p class="text-secondary mt-2">To</p>
+            <select class="form-select p-2 border-2 rounded-2 w-100 ms-2">
+                <option value="/movies-list">Chennai</option>
+                <option value="/movies-list">Coimbatore</option>
+                <option value="/movies-list">Madurai</option>
+                <option value="/movies-list">Tiruvannamalai</option>
+                <option value="/movies-list">Vellore</option>
+                <option value="/movies-list">Salem</option>
+                <option value="/movies-list">Tiruppur</option>
+                <option value="/movies-list">Erode</option>
+            </select>
+        </div>
+        <div class="col-3 d-flex justify-content-between">
+            <input type="date" class="p-2 rounded-3 border-0 bg-light-subtle w-100">
+        </div>
+        <div class="col-3 d-flex justify-content-end" (click)="clicked()">
+            <button class="btn bg-danger w-50">search</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid mt-3 pb-3" style="background-color: rgb(240, 240, 240);" *ngIf="isviewed">
+    <div class="pt-4">
+        <div class=" border-light p-3 m-3 rounded-3 bg-white row" (click)="toggle()">
+            <div class="col-3 mt-4">
+                <h6 class="fs-4">Yolo Bus</h6>
+                <p style="color: rgb(196, 194, 194);">AC Sleeper (2 + 1)</p>
+            </div>
+            <div class="col-2 mt-3">
+                <h6 style="color: rgb(190, 190, 190);">07 Apr</h6>
+                <h5 style="font-weight: bold;">22:00</h5>
+                <h6 style="color: rgb(190, 190, 190);">Chennai</h6>
+            </div>
+            <div class="col-2 mt-5">
+                <h6> <span style="color: rgb(190, 190, 190);">---</span> 08:37 Hrs <span
+                        style="color: rgb(190, 190, 190);">---</span></h6>
+            </div>
+            <div class="col-2 mt-3" style="border-right: 1px solid gray;">
+                <h6 style="color: rgb(190, 190, 190);">08 Apr</h6>
+                <h5 style="font-weight: bold;">05:37</h5>
+                <h6 style="color: rgb(190, 190, 190);">Bangalore</h6>
+            </div>
+            <div class="col-3 text-end">
+                <h6> Starting at </h6>
+                <h5>Rs.989</h5>
+                <button class="btn bg-danger w-50" (click)="toggle()">show seats</button>
+                <h6 class="pt-2" style="color: rgb(190, 190, 190);">28 Seats Available</h6>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" border-light p-3 m-3 rounded-3 bg-white row" *ngIf="!hideRow">
+        <div class="col-3 mt-4">
+            <h6 class="fs-4">Yolo Bus</h6>
+            <p style="color: rgb(196, 194, 194);">AC Sleeper (2 + 1)</p>
+        </div>
+        <div class="col-2 mt-3">
+            <h6 style="color: rgb(190, 190, 190);">07 Apr</h6>
+            <h5 style="font-weight: bold;">22:00</h5>
+            <h6 style="color: rgb(190, 190, 190);">Chennai</h6>
+        </div>
+        <div class="col-2 mt-5">
+            <h6> <span style="color: rgb(190, 190, 190);">---</span> 08:37 Hrs <span
+                    style="color: rgb(190, 190, 190);">---</span></h6>
+        </div>
+        <div class="col-2 mt-3" style="border-right: 1px solid gray;">
+            <h6 style="color: rgb(190, 190, 190);">08 Apr</h6>
+            <h5 style="font-weight: bold;">05:37</h5>
+            <h6 style="color: rgb(190, 190, 190);">Bangalore</h6>
+        </div>
+        <div class="col-3 text-end">
+            <h6> Starting at </h6>
+            <h5>Rs.989</h5>
+            <button class="btn bg-danger w-50">show seats</button>
+            <h6 class="pt-2" style="color: rgb(190, 190, 190);">28 Seats Available</h6>
+        </div>
+    </div>
+    <div class=" border-light p-3 m-3 rounded-3 bg-white row" *ngIf="!hideRow">
+        <div class="col-3 mt-4">
+            <h6 class="fs-4">Yolo Bus</h6>
+            <p style="color: rgb(196, 194, 194);">AC Sleeper (2 + 1)</p>
+        </div>
+        <div class="col-2 mt-3">
+            <h6 style="color: rgb(190, 190, 190);">07 Apr</h6>
+            <h5 style="font-weight: bold;">22:00</h5>
+            <h6 style="color: rgb(190, 190, 190);">Chennai</h6>
+        </div>
+        <div class="col-2 mt-5">
+            <h6> <span style="color: rgb(190, 190, 190);">---</span> 08:37 Hrs <span
+                    style="color: rgb(190, 190, 190);">---</span></h6>
+        </div>
+        <div class="col-2 mt-3" style="border-right: 1px solid gray;">
+            <h6 style="color: rgb(190, 190, 190);">08 Apr</h6>
+            <h5 style="font-weight: bold;">05:37</h5>
+            <h6 style="color: rgb(190, 190, 190);">Bangalore</h6>
+        </div>
+        <div class="col-3 text-end">
+            <h6> Starting at </h6>
+            <h5>Rs.989</h5>
+            <button class="btn bg-danger w-50">show seats</button>
+            <h6 class="pt-2" style="color: rgb(190, 190, 190);">28 Seats Available</h6>
+        </div>
+    </div>
+
+    <!--  -->
+</div>
+<div class="mt-5 d-flex" *ngIf="show">
+    <div class="col-6 bg-white p-3"  style="border-right: 1px solid gray;">
+        <!-- upper 2 side -->
+        <div class="ps-5">
+             <p class="fs-5 text-danger">Upper Seats</p>
+
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button  class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+        </div>
+        <div class="ps-5">
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+        </div>
+
+
+        <!-- upper 1 side -->
+        <div class="bg-white mt-3 ps-5">
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64"
+                    height="30" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+        </div>
+    </div>
+
+    <div class="col-6 bg-white p-3">
+        <!-- lower 2 side -->
+        <div class="ps-5">
+             <p class="fs-5 text-danger">Lower Seats</p>
+
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+        </div>
+        <div class="ps-5">
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+        </div>
+
+
+        <!-- lower 1 side -->
+        <div class="bg-white mt-3 ps-5">
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64"
+                    height="30" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+            <button class="position-relative p-3" style="border: none;background-color: white;"><svg width="64" height="30" viewBox="0 0 60 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="59" height="29" rx="3.5" fill="white" stroke="#BDBDBD"></rect>
+                    <rect x="56.5" y="5.5" width="3" height="19" rx="1.5" fill="white" stroke="#BDBDBD"></rect>
+                </svg><span
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">DU10</span></button>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center pt-3"*ngIf="show">
+<button mat-raised-button class="movie-pay btn">Pay Rs.220.00</button>
+</div>
+
+
+

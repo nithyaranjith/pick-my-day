@@ -1,0 +1,110 @@
+<div class="container-fluid" style="background-color: #f0f0f0;;">
+    <!-- <div class="row mt-5 p-5">
+        <div class="col-4"></div>
+        <div class="col-4 border bg-light p-5 mt-5">
+            <div class="d-flex justify-content-around">
+            <h6>Hrs</h6>
+            <h6>Price</h6>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="d-flex flex-column">
+                <button class="btn" [class.selected]="isButtonSelected" 
+                (click)="toggleButtonState()">1hrs</button>
+                <button  class="btn"
+               >2hrs</button>
+                <button class="btn" 
+                >4hrs</button>
+                <button class="btn" 
+                >6hrs</button>
+        </div>
+        <div class="d-flex flex-column">
+            <button class="btn" [class.selected]="isButtonSelected" 
+                >1000</button>
+                <button class="btn"
+                >1500</button>
+                <button class="btn"
+                >4000</button>
+                <button class="btn"
+                >6000</button>
+        </div>
+        </div>
+        <div class="d-flex justify-content-end">
+    <a class="d-flex justify-content-around bg-success w-25 text-white rounded-3 me-5 mt-4" routerLink="">submit</a>
+        </div>
+            
+        </div>
+        <div class="col-4"></div>
+    </div> -->
+    <div class="d-flex">
+        <div class="col-6 ps-2 pt-3 pe-3 pb-3">
+            <div style="height: 600px; width: 500px; background-color: white;">
+                <img src="/assets/images/cricket-turf.jpeg" alt="movie-list-1" class="img-fluid mb-3"
+                    style="height: 300px; width: 500px;">
+                <h6 class="text-success ps-2">ROHAAN SPORTS ACADEMY</h6>
+                <h6 class="mb-2 ps-2">chennai</h6>
+                <hr>
+                <h6 class="ps-2">Location</h6>
+                <h6 class="ps-2" style="color: gray;">B&C Mills, SPR City, Stephenson Rd, Perambur, Chennai, Tamil Nadu
+                    600012, perambur, Stephenson road, Chennai 600012</h6>
+                <hr>
+                <h6 class="ps-2">Amenities</h6>
+                <h6 class="ps-2" style="color: gray;">Artificial Turf</h6>
+                <h6 class="ps-2" style="color: gray;">First Aid</h6>
+                <h6 class="ps-2" style="color: gray;">Flood Lights</h6>
+
+            </div>
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex pb-4">
+                <h6 class="pe-2 pt-1">Select Date</h6>
+                <input type="date">
+            </div>
+            <div class="sports-list_button mb-3">
+                <button class="btn me-3">Box-Cricket</button>
+                <button class="btn me-3">Badminton</button>
+                <button class="btn me-3">Foodball</button>
+                <button class="btn me-3">Vollyball</button>
+                <button class="btn me-3">Tennis</button>
+            </div>
+            <div class="col-12 mt-3 rounded-1 p-2 d-flex justify-content-between"
+                style="border: 1px solid rgb(200, 200, 200); background-color: white;">
+                <div class="ps-2 pt-2">17:00 - 18:00 <span class="ps-4"> ₹1,000</span></div>
+                <div>
+                    <button class="btn sports-add" style="background-color: red; color: white;">+ Add</button>
+                </div>
+            </div>
+            <div class="col-12 mt-3 rounded-1 p-2 d-flex justify-content-between"
+                style="border: 1px solid rgb(200, 200, 200); background-color: white;">
+                <div class="ps-2 pt-2">18:00 - 19:00 <span class="ps-4"> ₹1,000</span></div>
+                <div>
+                    <button class="btn" style="background-color: red; color: white;">+ Add</button>
+                </div>
+            </div>
+            <div class="col-12 mt-3 rounded-1 p-2 d-flex justify-content-between"
+                style="border: 1px solid rgb(200, 200, 200); background-color: white;">
+                <div class="ps-2 pt-2">19:00 - 20:00 <span class="ps-4"> ₹1,000</span></div>
+                <div>
+                    <button class="btn" style="background-color: red; color: white;">+ Add</button>
+                </div>
+            </div>
+            <div class="col-12 mt-3 rounded-1 p-2 d-flex justify-content-between"
+                style="border: 1px solid rgb(200, 200, 200); background-color: white;">
+                <div class="ps-2 pt-2">20:00 - 21:00 <span class="ps-4"> ₹1,000</span></div>
+                <div>
+                    <button class="btn" style="background-color: red; color: white;">+ Add</button>
+                </div>
+            </div>
+            <div class="col-12 mt-3 rounded-1 p-2 d-flex justify-content-between"
+                style="border: 1px solid rgb(200, 200, 200); background-color: white;">
+                <div class="ps-2 pt-2">21:00 - 22:00 <span class="ps-4"> ₹1,000</span></div>
+                <div>
+                    <button class="btn" style="background-color: red; color: white;">+ Add</button>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-center pt-5">
+                <button class="movie-pay btn" routerLink="/sports-pay-done">Pay Rs.220.00</button>
+            </div>
+        </div>
+    </div>
+</div>

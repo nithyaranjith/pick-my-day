@@ -1,0 +1,24 @@
+.hoverClr:hover{
+    background-color: rgb(2, 174, 2);
+    color: white;
+    cursor: pointer;
+}
+.hoverClr{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.movie-pay{
+    background-color: #f84464;
+    color: white;
+    width: 350px;
+}
+.selected {
+    background-color: green;
+    color:white
+  }
+  

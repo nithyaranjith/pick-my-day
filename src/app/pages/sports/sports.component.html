@@ -1,1 +1,41 @@
-<p>sports works!</p>
+<div class="ms-3">
+    <h3 class="text-success mt-5">Slot Booking</h3>
+    <p class="text-warning"> * Book your slot and enjoy your day with your faviourate sport</p>
+</div>
+<div class="state col-4 ms-3">
+    <label class="pe-3  text-info-emphasis">Select Your City <span class="text-danger">*</span></label>
+    <select class="form-select p-2 border-2 rounded-2 w-50">
+        <option value="/movies-list">Chennai</option>
+        <option value="/movies-list">Coimbatore</option>
+        <option value="/movies-list">Madurai</option>
+        <option value="/movies-list">Tiruvannamalai</option>
+        <option value="/movies-list">Vellore</option>
+        <option value="/movies-list">Salem</option>
+        <option value="/movies-list">Tiruppur</option>
+        <option value="/movies-list">Erode</option>
+    </select>
+    <div class="mt-3 mb-3">
+        <button class="btn btn-success" (click)="click()">Submit</button>
+</div>
+</div>
+
+<div class="container-fluid d-flex justify-content-between p-5" style="background-color: #f0f0f0;" *ngIf="isviewed">
+   <div class="p-3" style="height: 350px; width: 350px; background-color: white;">
+    <img src="/assets/images/cricke.webp" alt="movie-list-1" class="img-fluid mb-3 p-2" style="height: 200px; width: 350px;">
+    <h6 class="text-success">ROHAAN SPORTS ACADEMY</h6>
+    <h6 class="mb-2">chennai</h6>
+    <button class="btn btn-success border-0" routerLink="/payment">BOOK NOW</button>
+   </div>
+   <div class="p-3" style="height: 350px; width: 350px; background-color: white;">
+    <img src="/assets/images/badminton.webp" alt="movie-list-1" class="img-fluid mb-3 p-2" style="height: 200px; width: 350px;">
+    <h6 class="text-success">TIKI TAKA - KILPAUK</h6>
+    <h6 class="mb-2">chennai</h6>
+    <button class="btn btn-success border-0" routerLink="/payment">BOOK NOW</button>
+   </div>
+   <div class="p-3" style="height: 350px; width: 350px; background-color: white;">
+    <img src="/assets/images/cricket-turf1.webp" alt="movie-list-1" class="img-fluid mb-3 p-2" style="height: 200px; width: 350px;">
+    <h6 class="text-success">MGG SPORTS CLUB</h6>
+    <h6 class="mb-2">chennai</h6>
+    <button class="btn btn-success border-0" routerLink="/payment">BOOK NOW</button>
+   </div>
+</div>

@@ -1,0 +1,304 @@
+<div class="container-fluid p-3">
+    <div class="d-flex">
+        <div class="col-6">
+            <h5 class="" style="color: rgb(60, 60, 60);">Godzilla x Kong: The New Empire</h5>
+            <h6 style="font-size: 12px; color: #666;">AGS Cinemas OMR: Navlur | Today, 31 Mar, 10:40 PM</h6>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4 d-flex pt-3 ps-3">
+            <button class="pt-3 me-3" style="background-color: white; border: 1px solid green; border-radius: 2px; height: 20px; width: 20px;"></button>
+            <h6 class="me-5" style="font-size: 14px;">Available</h6>
+            <button class="pt-3 me-3" style="background-color: green; border: 1px solid green; border-radius: 2px; height: 20px; width: 20px;"></button>
+            <h6 class="me-5" style="font-size: 14px;">Selected</h6>
+            <button class="pt-3 me-3" style="background-color: rgb(178, 178, 178); border: 1px solid green; border-radius: 2px; height: 20px; width: 20px;"></button>
+            <h6 class="me-5" style="font-size: 14px;">Sold</h6>
+
+        </div>
+    </div>
+    
+    <div class="d-flex bg-light mt-4 p-2">
+        <div class="col-4">
+            <button type="button" class="border border-danger rounded bg-white text-danger"
+                style="font-size: 12px;height: 40px;">
+                <p>06:45pm <br>4k DOLBY ATBOs</p>
+            </button>
+            <button type="button" class="bg-success rounded ms-3 border-0 text-white"
+                style="font-size: 12px;height: 40px;width: 105px;">
+                <p>10:40pm <br> 4k DOLBY 7.1</p>
+            </button>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4 pt-2">
+            <a class="movie-pay btn float-end " routerLink="/sports-pay-done">Pay Rs.220.00</a>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="px-5 mt-4">
+        <h6>DIAMOND 3D-Rs. 220.00</h6>
+        <hr>
+        <div class="" >
+           
+            <div class="d-flex">
+                <p class="pe-5">A</p>
+                <div class="col-6">
+                    <button class="pt-3 me-3" 
+                    [class.selected]="isButtonSelected" 
+                    (click)="toggleButtonState()"
+                    class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <p class="pe-5">B</p>
+                <div class="col-6 ">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <p class="pe-5">C</p>
+                <div class="col-6">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <p class="pe-5">D</p>
+                <div class="col-6">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <p class="pe-5">E</p>
+                <div class="col-6">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <p class="pe-5">F</p>
+                <div class="col-6">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="px-5 mt-3">
+        <h6>PEARL 3D-Rs. 90.00</h6>
+        <hr>
+        <div class="">
+           
+            <div class="d-flex">
+                <p class="pe-5">A</p>
+                <div class="col-6">
+
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <p class="pe-5">B</p>
+                <div class="col-6 ">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                    <button class="hoverClr me-2 pt-0">8</button>
+                    <button class="hoverClr me-2 pt-0">9</button>
+                    <button class="hoverClr me-2 pt-0">10</button>
+                    <button class="hoverClr me-2 pt-0">11</button>
+                    <button class="hoverClr me-2 pt-0">12</button>
+                    <button class="hoverClr me-2 pt-0">13</button>
+                    <button class="hoverClr me-2 pt-0">14</button>
+                    <button class="hoverClr me-2 pt-0">15</button>
+                    <button class="hoverClr me-2 pt-0">16</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="hoverClr me-2 pt-0">1</button>
+                    <button class="hoverClr me-2 pt-0">2</button>
+                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0">4</button>
+                    <button class="hoverClr me-2 pt-0">5</button>
+                    <button class="hoverClr me-2 pt-0">6</button>
+                    <button class="hoverClr me-2 pt-0">7</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

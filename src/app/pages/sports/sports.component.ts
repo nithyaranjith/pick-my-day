@@ -10,5 +10,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './sports.component.css'
 })
 export class SportsComponent {
+isviewed = false;
 
+click(){
+  this.isviewed = true;
+}
 }

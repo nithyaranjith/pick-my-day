@@ -1,0 +1,25 @@
+.selected {
+    background-color: green;
+    color:white
+  }
+  .sports-list_button>button:hover{
+    color: red;
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: white;
+}
+.sports-list_button>button{
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+}
+.sports-list_button>img{
+    height: 420px;
+    width: 280px;
+    border-radius: 10px;
+}
+.movie-pay{
+  background-color: #f84464;
+  color: white;
+  width: 350px;
+}
