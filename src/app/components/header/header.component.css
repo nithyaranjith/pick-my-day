@@ -36,7 +36,8 @@ li:hover{
   padding: 2px;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: red;
+  /* background-color: red; */
+  border-bottom: 1px solid red;
   border-radius: 5px;
 }
 .logo {
@@ -44,4 +45,13 @@ li:hover{
   background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+/* Add styles for the active link */
+.lili>li.active {
+  color: red; /* Change the color to highlight the active link */
+  font-weight: bold; /* You can add more styles as per your design */
+  border-right: 2px solid yellow;
+  border-bottom: 1px solid yellow;
+  border-radius: 5px;
+  padding: 2px;
 }
