@@ -6,7 +6,7 @@ import { TravelComponent } from '../travel.component';
 @Component({
   selector: 'app-bus-booking',
   standalone: true,
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,],
   templateUrl: './bus-booking.component.html',
   styleUrl: './bus-booking.component.css'
 })
@@ -23,4 +23,10 @@ toggle(){
   this.hideRow = true;
   this.show = true;
 }
+
+    isButtonSelected: boolean = false;
+  
+    toggleButtonState() {
+      this.isButtonSelected = !this.isButtonSelected;
+    }
 }

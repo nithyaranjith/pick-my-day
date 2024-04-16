@@ -29,7 +29,7 @@
         </div>
         <div class="col-4"></div>
         <div class="col-4 pt-2">
-            <a class="movie-pay btn float-end " routerLink="/sports-pay-done">Pay Rs.220.00</a>
+            <a class="movie-pay btn float-end " routerLink="/sports-pay-done">Pay Rs.660.00</a>
         </div>
     </div>
     
@@ -46,8 +46,12 @@
                     [class.selected]="isButtonSelected" 
                     (click)="toggleButtonState()"
                     class="hoverClr me-2 pt-0">1</button>
-                    <button class="hoverClr me-2 pt-0">2</button>
-                    <button class="hoverClr me-2 pt-0">3</button>
+                    <button class="hoverClr me-2 pt-0"  
+                    [class.selected]="isButtonSelected" 
+                    (click)="toggleButtonState()">2</button>
+                    <button class="hoverClr me-2 pt-0"  
+                    [class.selected]="isButtonSelected" 
+                    (click)="toggleButtonState()">3</button>
                     <button class="hoverClr me-2 pt-0">4</button>
                     <button class="hoverClr me-2 pt-0">5</button>
                     <button class="hoverClr me-2 pt-0">6</button>

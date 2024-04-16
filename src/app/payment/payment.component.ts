@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatdialogComponent } from '../matdialog/matdialog.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -13,9 +12,9 @@ import { RouterLink } from '@angular/router';
 export class PaymentComponent {
   isButtonSelected: boolean = false;
 
-  // toggleButtonState() {
-  //   this.isButtonSelected = !this.isButtonSelected;
-  // }
+  toggleButtonState() {
+    this.isButtonSelected = !this.isButtonSelected;
+  }
   
   
 }

@@ -1,0 +1,11 @@
+.main-bg{
+    background-image: url("/mainbg.svg");
+}
+.main-recent{
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 8px 8px 12px 1px rgb(75, 75, 75),
+            -8px -8px 12px 1px rgb(75, 75, 75),
+            -8px 8px 12px 1px rgb(75, 75, 75),
+            8px -8px 12px 1px rgb(75, 75, 75);
+}
